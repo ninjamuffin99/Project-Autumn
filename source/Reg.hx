@@ -28,7 +28,7 @@ class Reg
 	public static var FULLSCREEN:Bool = false;
 	public static var VOLUME:Float = 0.6;
 	// Currently Antialiasing on/off, comes with a setter that applies to all cameras
-	public static var ANTIALIASING(default, set):Bool = true;
+	public static var ANTIALIASING(default, set):Bool = false;
 	
 	// ------- 
 	// Store the json parameters loaded from the file

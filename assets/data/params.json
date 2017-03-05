@@ -2,7 +2,7 @@
 	"reg" : {
 		"NAME" : "DJFLIXEL tools",
 		"VERSION" : "0.2.2",
-		"ANTIALIASING" : true,
+		"ANTIALIASING" : false,
 		"FULLSCREEN" : false,
 		"VOLUME" : 0.6
 	},
@@ -63,7 +63,7 @@
 		"assets/bg03.png" ],
 	
 	"dialog" : [
-		"washing my hands feels good man",
+		"wddhing my hands feels good man",
 		"dialog box demo..",
 		"!np",
  		"(s3) Press (K) to progress",
