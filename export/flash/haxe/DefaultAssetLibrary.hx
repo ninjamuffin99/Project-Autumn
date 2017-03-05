@@ -63,18 +63,6 @@ class DefaultAssetLibrary extends AssetLibrary {
 		
 		
 		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
 		openfl.text.Font.registerFont (__ASSET__OPENFL__flixel_fonts_nokiafc22_ttf);
 		openfl.text.Font.registerFont (__ASSET__OPENFL__flixel_fonts_monsterrat_ttf);
 		
@@ -96,10 +84,6 @@ class DefaultAssetLibrary extends AssetLibrary {
 		type.set ("assets/images/lightswitch_V1.png", AssetType.IMAGE);
 		className.set ("assets/images/Oven_V1.png", __ASSET__assets_images_oven_v1_png);
 		type.set ("assets/images/Oven_V1.png", AssetType.IMAGE);
-		className.set ("assets/images/SCSpritesheetwalk.png", __ASSET__assets_images_scspritesheetwalk_png);
-		type.set ("assets/images/SCSpritesheetwalk.png", AssetType.IMAGE);
-		className.set ("assets/images/SCWal_V2.png", __ASSET__assets_images_scwal_v2_png);
-		type.set ("assets/images/SCWal_V2.png", AssetType.IMAGE);
 		className.set ("assets/images/SCWal_V3.png", __ASSET__assets_images_scwal_v3_png);
 		type.set ("assets/images/SCWal_V3.png", AssetType.IMAGE);
 		className.set ("assets/images/sink_V1.png", __ASSET__assets_images_sink_v1_png);
@@ -108,26 +92,6 @@ class DefaultAssetLibrary extends AssetLibrary {
 		type.set ("assets/images/TVCouch_V1.png", AssetType.IMAGE);
 		className.set ("assets/images/window_V1.png", __ASSET__assets_images_window_v1_png);
 		type.set ("assets/images/window_V1.png", AssetType.IMAGE);
-		className.set ("assets/music/IAMRF.mp3", __ASSET__assets_music_iamrf_mp3);
-		type.set ("assets/music/IAMRF.mp3", AssetType.MUSIC);
-		className.set ("assets/sounds/hotsizzling.mp3", __ASSET__assets_sounds_hotsizzling_mp3);
-		type.set ("assets/sounds/hotsizzling.mp3", AssetType.MUSIC);
-		className.set ("assets/sounds/mouse.mp3", __ASSET__assets_sounds_mouse_mp3);
-		type.set ("assets/sounds/mouse.mp3", AssetType.MUSIC);
-		className.set ("assets/sounds/pc.mp3", __ASSET__assets_sounds_pc_mp3);
-		type.set ("assets/sounds/pc.mp3", AssetType.MUSIC);
-		className.set ("assets/sounds/shower.mp3", __ASSET__assets_sounds_shower_mp3);
-		type.set ("assets/sounds/shower.mp3", AssetType.MUSIC);
-		className.set ("assets/sounds/sink.mp3", __ASSET__assets_sounds_sink_mp3);
-		type.set ("assets/sounds/sink.mp3", AssetType.MUSIC);
-		className.set ("assets/sounds/switchoff.mp3", __ASSET__assets_sounds_switchoff_mp3);
-		type.set ("assets/sounds/switchoff.mp3", AssetType.MUSIC);
-		className.set ("assets/sounds/switchon.mp3", __ASSET__assets_sounds_switchon_mp3);
-		type.set ("assets/sounds/switchon.mp3", AssetType.MUSIC);
-		className.set ("assets/sounds/Tom07 Drums1DOTcom.wav", __ASSET__assets_sounds_tom07_drums1dotcom_wav);
-		type.set ("assets/sounds/Tom07 Drums1DOTcom.wav", AssetType.SOUND);
-		className.set ("assets/sounds/typing.mp3", __ASSET__assets_sounds_typing_mp3);
-		type.set ("assets/sounds/typing.mp3", AssetType.MUSIC);
 		className.set ("flixel/sounds/beep.mp3", __ASSET__flixel_sounds_beep_mp3);
 		type.set ("flixel/sounds/beep.mp3", AssetType.MUSIC);
 		className.set ("flixel/sounds/flixel.mp3", __ASSET__flixel_sounds_flixel_mp3);
@@ -169,14 +133,6 @@ class DefaultAssetLibrary extends AssetLibrary {
 		path.set (id, id);
 		
 		type.set (id, AssetType.IMAGE);
-		id = "assets/images/SCSpritesheetwalk.png";
-		path.set (id, id);
-		
-		type.set (id, AssetType.IMAGE);
-		id = "assets/images/SCWal_V2.png";
-		path.set (id, id);
-		
-		type.set (id, AssetType.IMAGE);
 		id = "assets/images/SCWal_V3.png";
 		path.set (id, id);
 		
@@ -193,46 +149,6 @@ class DefaultAssetLibrary extends AssetLibrary {
 		path.set (id, id);
 		
 		type.set (id, AssetType.IMAGE);
-		id = "assets/music/IAMRF.mp3";
-		path.set (id, id);
-		
-		type.set (id, AssetType.MUSIC);
-		id = "assets/sounds/hotsizzling.mp3";
-		path.set (id, id);
-		
-		type.set (id, AssetType.MUSIC);
-		id = "assets/sounds/mouse.mp3";
-		path.set (id, id);
-		
-		type.set (id, AssetType.MUSIC);
-		id = "assets/sounds/pc.mp3";
-		path.set (id, id);
-		
-		type.set (id, AssetType.MUSIC);
-		id = "assets/sounds/shower.mp3";
-		path.set (id, id);
-		
-		type.set (id, AssetType.MUSIC);
-		id = "assets/sounds/sink.mp3";
-		path.set (id, id);
-		
-		type.set (id, AssetType.MUSIC);
-		id = "assets/sounds/switchoff.mp3";
-		path.set (id, id);
-		
-		type.set (id, AssetType.MUSIC);
-		id = "assets/sounds/switchon.mp3";
-		path.set (id, id);
-		
-		type.set (id, AssetType.MUSIC);
-		id = "assets/sounds/Tom07 Drums1DOTcom.wav";
-		path.set (id, id);
-		
-		type.set (id, AssetType.SOUND);
-		id = "assets/sounds/typing.mp3";
-		path.set (id, id);
-		
-		type.set (id, AssetType.MUSIC);
 		id = "flixel/sounds/beep.mp3";
 		path.set (id, id);
 		
@@ -293,12 +209,6 @@ class DefaultAssetLibrary extends AssetLibrary {
 		className.set ("assets/images/Oven_V1.png", __ASSET__assets_images_oven_v1_png);
 		type.set ("assets/images/Oven_V1.png", AssetType.IMAGE);
 		
-		className.set ("assets/images/SCSpritesheetwalk.png", __ASSET__assets_images_scspritesheetwalk_png);
-		type.set ("assets/images/SCSpritesheetwalk.png", AssetType.IMAGE);
-		
-		className.set ("assets/images/SCWal_V2.png", __ASSET__assets_images_scwal_v2_png);
-		type.set ("assets/images/SCWal_V2.png", AssetType.IMAGE);
-		
 		className.set ("assets/images/SCWal_V3.png", __ASSET__assets_images_scwal_v3_png);
 		type.set ("assets/images/SCWal_V3.png", AssetType.IMAGE);
 		
@@ -310,36 +220,6 @@ class DefaultAssetLibrary extends AssetLibrary {
 		
 		className.set ("assets/images/window_V1.png", __ASSET__assets_images_window_v1_png);
 		type.set ("assets/images/window_V1.png", AssetType.IMAGE);
-		
-		className.set ("assets/music/IAMRF.mp3", __ASSET__assets_music_iamrf_mp3);
-		type.set ("assets/music/IAMRF.mp3", AssetType.MUSIC);
-		
-		className.set ("assets/sounds/hotsizzling.mp3", __ASSET__assets_sounds_hotsizzling_mp3);
-		type.set ("assets/sounds/hotsizzling.mp3", AssetType.MUSIC);
-		
-		className.set ("assets/sounds/mouse.mp3", __ASSET__assets_sounds_mouse_mp3);
-		type.set ("assets/sounds/mouse.mp3", AssetType.MUSIC);
-		
-		className.set ("assets/sounds/pc.mp3", __ASSET__assets_sounds_pc_mp3);
-		type.set ("assets/sounds/pc.mp3", AssetType.MUSIC);
-		
-		className.set ("assets/sounds/shower.mp3", __ASSET__assets_sounds_shower_mp3);
-		type.set ("assets/sounds/shower.mp3", AssetType.MUSIC);
-		
-		className.set ("assets/sounds/sink.mp3", __ASSET__assets_sounds_sink_mp3);
-		type.set ("assets/sounds/sink.mp3", AssetType.MUSIC);
-		
-		className.set ("assets/sounds/switchoff.mp3", __ASSET__assets_sounds_switchoff_mp3);
-		type.set ("assets/sounds/switchoff.mp3", AssetType.MUSIC);
-		
-		className.set ("assets/sounds/switchon.mp3", __ASSET__assets_sounds_switchon_mp3);
-		type.set ("assets/sounds/switchon.mp3", AssetType.MUSIC);
-		
-		className.set ("assets/sounds/Tom07 Drums1DOTcom.wav", __ASSET__assets_sounds_tom07_drums1dotcom_wav);
-		type.set ("assets/sounds/Tom07 Drums1DOTcom.wav", AssetType.SOUND);
-		
-		className.set ("assets/sounds/typing.mp3", __ASSET__assets_sounds_typing_mp3);
-		type.set ("assets/sounds/typing.mp3", AssetType.MUSIC);
 		
 		className.set ("flixel/sounds/beep.mp3", __ASSET__flixel_sounds_beep_mp3);
 		type.set ("flixel/sounds/beep.mp3", AssetType.MUSIC);
@@ -1009,22 +889,10 @@ class DefaultAssetLibrary extends AssetLibrary {
 @:keep @:bind #if display private #end class __ASSET__assets_images_housebw_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__assets_images_lightswitch_v1_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__assets_images_oven_v1_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
-@:keep @:bind #if display private #end class __ASSET__assets_images_scspritesheetwalk_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
-@:keep @:bind #if display private #end class __ASSET__assets_images_scwal_v2_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__assets_images_scwal_v3_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__assets_images_sink_v1_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__assets_images_tvcouch_v1_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__assets_images_window_v1_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
-@:keep @:bind #if display private #end class __ASSET__assets_music_iamrf_mp3 extends flash.media.Sound { }
-@:keep @:bind #if display private #end class __ASSET__assets_sounds_hotsizzling_mp3 extends flash.media.Sound { }
-@:keep @:bind #if display private #end class __ASSET__assets_sounds_mouse_mp3 extends flash.media.Sound { }
-@:keep @:bind #if display private #end class __ASSET__assets_sounds_pc_mp3 extends flash.media.Sound { }
-@:keep @:bind #if display private #end class __ASSET__assets_sounds_shower_mp3 extends flash.media.Sound { }
-@:keep @:bind #if display private #end class __ASSET__assets_sounds_sink_mp3 extends flash.media.Sound { }
-@:keep @:bind #if display private #end class __ASSET__assets_sounds_switchoff_mp3 extends flash.media.Sound { }
-@:keep @:bind #if display private #end class __ASSET__assets_sounds_switchon_mp3 extends flash.media.Sound { }
-@:keep @:bind #if display private #end class __ASSET__assets_sounds_tom07_drums1dotcom_wav extends flash.media.Sound { }
-@:keep @:bind #if display private #end class __ASSET__assets_sounds_typing_mp3 extends flash.media.Sound { }
 @:keep @:bind #if display private #end class __ASSET__flixel_sounds_beep_mp3 extends flash.media.Sound { }
 @:keep @:bind #if display private #end class __ASSET__flixel_sounds_flixel_mp3 extends flash.media.Sound { }
 @:keep @:bind #if display private #end class __ASSET__flixel_fonts_nokiafc22_ttf extends flash.text.Font { }
@@ -1034,18 +902,6 @@ class DefaultAssetLibrary extends AssetLibrary {
 
 
 #elseif html5
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -1078,22 +934,10 @@ class DefaultAssetLibrary extends AssetLibrary {
 @:image("assets/images/houseBW.png") #if display private #end class __ASSET__assets_images_housebw_png extends lime.graphics.Image {}
 @:image("assets/images/lightswitch_V1.png") #if display private #end class __ASSET__assets_images_lightswitch_v1_png extends lime.graphics.Image {}
 @:image("assets/images/Oven_V1.png") #if display private #end class __ASSET__assets_images_oven_v1_png extends lime.graphics.Image {}
-@:image("assets/images/SCSpritesheetwalk.png") #if display private #end class __ASSET__assets_images_scspritesheetwalk_png extends lime.graphics.Image {}
-@:image("assets/images/SCWal_V2.png") #if display private #end class __ASSET__assets_images_scwal_v2_png extends lime.graphics.Image {}
 @:image("assets/images/SCWal_V3.png") #if display private #end class __ASSET__assets_images_scwal_v3_png extends lime.graphics.Image {}
 @:image("assets/images/sink_V1.png") #if display private #end class __ASSET__assets_images_sink_v1_png extends lime.graphics.Image {}
 @:image("assets/images/TVCouch_V1.png") #if display private #end class __ASSET__assets_images_tvcouch_v1_png extends lime.graphics.Image {}
 @:image("assets/images/window_V1.png") #if display private #end class __ASSET__assets_images_window_v1_png extends lime.graphics.Image {}
-@:file("assets/music/IAMRF.mp3") #if display private #end class __ASSET__assets_music_iamrf_mp3 extends lime.utils.Bytes {}
-@:file("assets/sounds/hotsizzling.mp3") #if display private #end class __ASSET__assets_sounds_hotsizzling_mp3 extends lime.utils.Bytes {}
-@:file("assets/sounds/mouse.mp3") #if display private #end class __ASSET__assets_sounds_mouse_mp3 extends lime.utils.Bytes {}
-@:file("assets/sounds/pc.mp3") #if display private #end class __ASSET__assets_sounds_pc_mp3 extends lime.utils.Bytes {}
-@:file("assets/sounds/shower.mp3") #if display private #end class __ASSET__assets_sounds_shower_mp3 extends lime.utils.Bytes {}
-@:file("assets/sounds/sink.mp3") #if display private #end class __ASSET__assets_sounds_sink_mp3 extends lime.utils.Bytes {}
-@:file("assets/sounds/switchoff.mp3") #if display private #end class __ASSET__assets_sounds_switchoff_mp3 extends lime.utils.Bytes {}
-@:file("assets/sounds/switchon.mp3") #if display private #end class __ASSET__assets_sounds_switchon_mp3 extends lime.utils.Bytes {}
-@:file("assets/sounds/Tom07 Drums1DOTcom.wav") #if display private #end class __ASSET__assets_sounds_tom07_drums1dotcom_wav extends lime.utils.Bytes {}
-@:file("assets/sounds/typing.mp3") #if display private #end class __ASSET__assets_sounds_typing_mp3 extends lime.utils.Bytes {}
 @:file("C:/HaxeToolkit/haxe/lib/flixel/4,2,0/assets/sounds/beep.mp3") #if display private #end class __ASSET__flixel_sounds_beep_mp3 extends lime.utils.Bytes {}
 @:file("C:/HaxeToolkit/haxe/lib/flixel/4,2,0/assets/sounds/flixel.mp3") #if display private #end class __ASSET__flixel_sounds_flixel_mp3 extends lime.utils.Bytes {}
 @:font("C:/HaxeToolkit/haxe/lib/flixel/4,2,0/assets/fonts/nokiafc22.ttf") #if display private #end class __ASSET__flixel_fonts_nokiafc22_ttf extends lime.text.Font {}

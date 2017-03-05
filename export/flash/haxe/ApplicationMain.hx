@@ -54,14 +54,6 @@ class ApplicationMain {
 		types.push (lime.Assets.AssetType.IMAGE);
 		
 		
-		urls.push ("assets/images/SCSpritesheetwalk.png");
-		types.push (lime.Assets.AssetType.IMAGE);
-		
-		
-		urls.push ("assets/images/SCWal_V2.png");
-		types.push (lime.Assets.AssetType.IMAGE);
-		
-		
 		urls.push ("assets/images/SCWal_V3.png");
 		types.push (lime.Assets.AssetType.IMAGE);
 		
@@ -76,46 +68,6 @@ class ApplicationMain {
 		
 		urls.push ("assets/images/window_V1.png");
 		types.push (lime.Assets.AssetType.IMAGE);
-		
-		
-		urls.push ("assets/music/IAMRF.mp3");
-		types.push (lime.Assets.AssetType.MUSIC);
-		
-		
-		urls.push ("assets/sounds/hotsizzling.mp3");
-		types.push (lime.Assets.AssetType.MUSIC);
-		
-		
-		urls.push ("assets/sounds/mouse.mp3");
-		types.push (lime.Assets.AssetType.MUSIC);
-		
-		
-		urls.push ("assets/sounds/pc.mp3");
-		types.push (lime.Assets.AssetType.MUSIC);
-		
-		
-		urls.push ("assets/sounds/shower.mp3");
-		types.push (lime.Assets.AssetType.MUSIC);
-		
-		
-		urls.push ("assets/sounds/sink.mp3");
-		types.push (lime.Assets.AssetType.MUSIC);
-		
-		
-		urls.push ("assets/sounds/switchoff.mp3");
-		types.push (lime.Assets.AssetType.MUSIC);
-		
-		
-		urls.push ("assets/sounds/switchon.mp3");
-		types.push (lime.Assets.AssetType.MUSIC);
-		
-		
-		urls.push ("assets/sounds/Tom07 Drums1DOTcom.wav");
-		types.push (lime.Assets.AssetType.SOUND);
-		
-		
-		urls.push ("assets/sounds/typing.mp3");
-		types.push (lime.Assets.AssetType.MUSIC);
 		
 		
 		urls.push ("flixel/sounds/beep.mp3");
@@ -203,11 +155,11 @@ class ApplicationMain {
 		
 		config = {
 			
-			build: "28",
-			company: "",
-			file: "SCJam",
+			build: "37",
+			company: "NinjaMuffin",
+			file: "Dancing",
 			fps: 60,
-			name: "SCJam",
+			name: "Sick Day",
 			orientation: "",
 			packageName: "com.example.myapp",
 			version: "0.0.1",
@@ -225,7 +177,7 @@ class ApplicationMain {
 					parameters: "{}",
 					resizable: true,
 					stencilBuffer: true,
-					title: "SCJam",
+					title: "Sick Day",
 					vsync: true,
 					width: 650,
 					x: null,

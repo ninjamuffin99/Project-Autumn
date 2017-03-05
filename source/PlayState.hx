@@ -129,16 +129,6 @@ class PlayState extends FlxState
 		cooking = false;
 		cleaningup = false;
 		
-		if (FlxG.sound.music == null) // don't restart the music if it's alredy playing
-		{
-			#if flash
-			FlxG.sound.playMusic("assets/music/IAMRF.mp3", 1, true);
-			#else
-			FlxG.sound.playMusic("assets/music/IAMRF.ogg", 1, true);
-			#end
-			
-		}
-		
 		super.create();
 	}
 
@@ -170,12 +160,6 @@ class PlayState extends FlxState
 			{
 				if (!cooking)
 				{
-					#if flash
-					FlxG.sound.play("assets/sounds/hotsizzling.mp3", 0.7);
-					#else
-					FlxG.sound.play("assets/sounds/hotsizzling.ogg", 0.7);
-					#end
-					
 					_player.visible = false;
 					oven.animation.play("cooking");
 					cooking = true;
@@ -192,12 +176,6 @@ class PlayState extends FlxState
 			{
 				if (!cleaningup)
 				{
-					#if flash
-					FlxG.sound.play("assets/sounds/sink.mp3", 0.7);
-					#else
-					FlxG.sound.play("assets/sounds/sink.ogg", 0.7);
-					#end
-					
 					_player.visible = false;
 					sink.animation.play("on");
 					cleaningup = true;
@@ -215,11 +193,6 @@ class PlayState extends FlxState
 			{
 				if (lightson)
 				{
-					#if flash
-					FlxG.sound.play("assets/sounds/switchoff.mp3");
-					#else
-					FlxG.sound.play("assets/sounds/switchoff.ogg");
-					#end
 					
 					lightswitch.animation.play("off");
 					FlxG.camera.alpha = 0.35;
@@ -227,11 +200,6 @@ class PlayState extends FlxState
 				}
 				else
 				{
-					#if flash
-					FlxG.sound.play("assets/sounds/switchon.mp3");
-					#else
-					FlxG.sound.play("assets/sounds/switchon.ogg");
-					#end
 					lightswitch.animation.play("on");
 					FlxG.camera.alpha = 1;
 					lightson = true;
@@ -306,12 +274,6 @@ class PlayState extends FlxState
 		{
 			if (!working)
 			{
-				#if flash
-				FlxG.sound.play("assets/sounds/pc.mp3", 0.3);
-				#else
-				FlxG.sound.play("assets/sounds/pc.ogg", 0.3);
-				#end
-				
 				player.visible = false;
 				desk.animation.play("work");
 				working = true;
@@ -324,11 +286,6 @@ class PlayState extends FlxState
 		{	
 			player.visible = false;
 			bathroom.animation.play("steam");
-			#if flash
-			FlxG.sound.play("assets/sounds/shower.mp3", 0.1, false);
-			#else
-			FlxG.sound.play("assets/sounds/shower.ogg", 0.1, false);
-			#end
 			
 			shower = true;
 		}
