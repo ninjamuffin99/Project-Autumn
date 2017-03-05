@@ -1,13 +1,20 @@
 package;
 
-import flixel.FlxGame;
-import openfl.display.Sprite;
+import djFlixel.tool.DynAssets;
+import djFlixel.MainTemplate;
+import flash.Lib;
 
-class Main extends Sprite
+class Main extends MainTemplate
 {
 	public function new()
 	{
-		super();
-		addChild(new FlxGame(300, 100, PlayState));
-	}
-}
+		// MainTemplate.framerate = 60; // Optional set custom framerate
+		DynAssets.FILE_LOAD_LIST = [Reg.PARAMS_FILE];
+		super(PlayState);
+	}//---------------------------------------------------;
+	// --
+	public static function main():Void
+	{	
+		Lib.current.addChild(new Main());
+	}//---------------------------------------------------;
+}// --

@@ -63,8 +63,15 @@ class DefaultAssetLibrary extends AssetLibrary {
 		
 		
 		
+		
+		
+		openfl.text.Font.registerFont (__ASSET__OPENFL__assets_pixelarial_ttf);
+		openfl.text.Font.registerFont (__ASSET__OPENFL__assets_tiny_ttf);
+		
+		
 		openfl.text.Font.registerFont (__ASSET__OPENFL__flixel_fonts_nokiafc22_ttf);
 		openfl.text.Font.registerFont (__ASSET__OPENFL__flixel_fonts_monsterrat_ttf);
+		
 		
 		
 		
@@ -72,6 +79,14 @@ class DefaultAssetLibrary extends AssetLibrary {
 		
 		#if flash
 		
+		className.set ("assets/bg01.png", __ASSET__assets_bg01_png);
+		type.set ("assets/bg01.png", AssetType.IMAGE);
+		className.set ("assets/bg02.png", __ASSET__assets_bg02_png);
+		type.set ("assets/bg02.png", AssetType.IMAGE);
+		className.set ("assets/bg03.png", __ASSET__assets_bg03_png);
+		type.set ("assets/bg03.png", AssetType.IMAGE);
+		className.set ("assets/data/params.json", __ASSET__assets_data_params_json);
+		type.set ("assets/data/params.json", AssetType.TEXT);
 		className.set ("assets/images/Bathroom_V1.png", __ASSET__assets_images_bathroom_v1_png);
 		type.set ("assets/images/Bathroom_V1.png", AssetType.IMAGE);
 		className.set ("assets/images/Bed_V1.png", __ASSET__assets_images_bed_v1_png);
@@ -92,6 +107,10 @@ class DefaultAssetLibrary extends AssetLibrary {
 		type.set ("assets/images/TVCouch_V1.png", AssetType.IMAGE);
 		className.set ("assets/images/window_V1.png", __ASSET__assets_images_window_v1_png);
 		type.set ("assets/images/window_V1.png", AssetType.IMAGE);
+		className.set ("assets/pixelarial.ttf", __ASSET__assets_pixelarial_ttf);
+		type.set ("assets/pixelarial.ttf", AssetType.FONT);
+		className.set ("assets/tiny.ttf", __ASSET__assets_tiny_ttf);
+		type.set ("assets/tiny.ttf", AssetType.FONT);
 		className.set ("flixel/sounds/beep.mp3", __ASSET__flixel_sounds_beep_mp3);
 		type.set ("flixel/sounds/beep.mp3", AssetType.MUSIC);
 		className.set ("flixel/sounds/flixel.mp3", __ASSET__flixel_sounds_flixel_mp3);
@@ -104,11 +123,29 @@ class DefaultAssetLibrary extends AssetLibrary {
 		type.set ("flixel/images/ui/button.png", AssetType.IMAGE);
 		className.set ("flixel/images/logo/default.png", __ASSET__flixel_images_logo_default_png);
 		type.set ("flixel/images/logo/default.png", AssetType.IMAGE);
+		className.set ("assets/hud_icons.png", __ASSET__assets_hud_icons_png);
+		type.set ("assets/hud_icons.png", AssetType.IMAGE);
 		
 		
 		#elseif html5
 		
 		var id;
+		id = "assets/bg01.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "assets/bg02.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "assets/bg03.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "assets/data/params.json";
+		path.set (id, id);
+		
+		type.set (id, AssetType.TEXT);
 		id = "assets/images/Bathroom_V1.png";
 		path.set (id, id);
 		
@@ -149,6 +186,14 @@ class DefaultAssetLibrary extends AssetLibrary {
 		path.set (id, id);
 		
 		type.set (id, AssetType.IMAGE);
+		id = "assets/pixelarial.ttf";
+		className.set (id, __ASSET__assets_pixelarial_ttf);
+		
+		type.set (id, AssetType.FONT);
+		id = "assets/tiny.ttf";
+		className.set (id, __ASSET__assets_tiny_ttf);
+		
+		type.set (id, AssetType.FONT);
 		id = "flixel/sounds/beep.mp3";
 		path.set (id, id);
 		
@@ -173,6 +218,10 @@ class DefaultAssetLibrary extends AssetLibrary {
 		path.set (id, id);
 		
 		type.set (id, AssetType.IMAGE);
+		id = "assets/hud_icons.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
 		
 		
 		var assetsPrefix = null;
@@ -190,6 +239,18 @@ class DefaultAssetLibrary extends AssetLibrary {
 		#if (windows || mac || linux)
 		
 		var useManifest = false;
+		
+		className.set ("assets/bg01.png", __ASSET__assets_bg01_png);
+		type.set ("assets/bg01.png", AssetType.IMAGE);
+		
+		className.set ("assets/bg02.png", __ASSET__assets_bg02_png);
+		type.set ("assets/bg02.png", AssetType.IMAGE);
+		
+		className.set ("assets/bg03.png", __ASSET__assets_bg03_png);
+		type.set ("assets/bg03.png", AssetType.IMAGE);
+		
+		className.set ("assets/data/params.json", __ASSET__assets_data_params_json);
+		type.set ("assets/data/params.json", AssetType.TEXT);
 		
 		className.set ("assets/images/Bathroom_V1.png", __ASSET__assets_images_bathroom_v1_png);
 		type.set ("assets/images/Bathroom_V1.png", AssetType.IMAGE);
@@ -221,6 +282,12 @@ class DefaultAssetLibrary extends AssetLibrary {
 		className.set ("assets/images/window_V1.png", __ASSET__assets_images_window_v1_png);
 		type.set ("assets/images/window_V1.png", AssetType.IMAGE);
 		
+		className.set ("assets/pixelarial.ttf", __ASSET__assets_pixelarial_ttf);
+		type.set ("assets/pixelarial.ttf", AssetType.FONT);
+		
+		className.set ("assets/tiny.ttf", __ASSET__assets_tiny_ttf);
+		type.set ("assets/tiny.ttf", AssetType.FONT);
+		
 		className.set ("flixel/sounds/beep.mp3", __ASSET__flixel_sounds_beep_mp3);
 		type.set ("flixel/sounds/beep.mp3", AssetType.MUSIC);
 		
@@ -238,6 +305,9 @@ class DefaultAssetLibrary extends AssetLibrary {
 		
 		className.set ("flixel/images/logo/default.png", __ASSET__flixel_images_logo_default_png);
 		type.set ("flixel/images/logo/default.png", AssetType.IMAGE);
+		
+		className.set ("assets/hud_icons.png", __ASSET__assets_hud_icons_png);
+		type.set ("assets/hud_icons.png", AssetType.IMAGE);
 		
 		
 		if (useManifest) {
@@ -883,6 +953,10 @@ class DefaultAssetLibrary extends AssetLibrary {
 #if !display
 #if flash
 
+@:keep @:bind #if display private #end class __ASSET__assets_bg01_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_bg02_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_bg03_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_data_params_json extends flash.utils.ByteArray { }
 @:keep @:bind #if display private #end class __ASSET__assets_images_bathroom_v1_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__assets_images_bed_v1_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__assets_images_deskanim_v1_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
@@ -893,12 +967,15 @@ class DefaultAssetLibrary extends AssetLibrary {
 @:keep @:bind #if display private #end class __ASSET__assets_images_sink_v1_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__assets_images_tvcouch_v1_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__assets_images_window_v1_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_pixelarial_ttf extends flash.text.Font { }
+@:keep @:bind #if display private #end class __ASSET__assets_tiny_ttf extends flash.text.Font { }
 @:keep @:bind #if display private #end class __ASSET__flixel_sounds_beep_mp3 extends flash.media.Sound { }
 @:keep @:bind #if display private #end class __ASSET__flixel_sounds_flixel_mp3 extends flash.media.Sound { }
 @:keep @:bind #if display private #end class __ASSET__flixel_fonts_nokiafc22_ttf extends flash.text.Font { }
 @:keep @:bind #if display private #end class __ASSET__flixel_fonts_monsterrat_ttf extends flash.text.Font { }
 @:keep @:bind #if display private #end class __ASSET__flixel_images_ui_button_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__flixel_images_logo_default_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_hud_icons_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 
 
 #elseif html5
@@ -915,8 +992,15 @@ class DefaultAssetLibrary extends AssetLibrary {
 
 
 
+
+
+@:keep #if display private #end class __ASSET__assets_pixelarial_ttf extends lime.text.Font { public function new () { super (); name = "Pixel Arial 11"; } } 
+@:keep #if display private #end class __ASSET__assets_tiny_ttf extends lime.text.Font { public function new () { super (); name = "Tiny Pixy"; } } 
+
+
 @:keep #if display private #end class __ASSET__flixel_fonts_nokiafc22_ttf extends lime.text.Font { public function new () { super (); name = "Nokia Cellphone FC Small"; } } 
 @:keep #if display private #end class __ASSET__flixel_fonts_monsterrat_ttf extends lime.text.Font { public function new () { super (); name = "Monsterrat"; } } 
+
 
 
 
@@ -928,6 +1012,10 @@ class DefaultAssetLibrary extends AssetLibrary {
 #if (windows || mac || linux || cpp)
 
 
+@:image("assets/bg01.png") #if display private #end class __ASSET__assets_bg01_png extends lime.graphics.Image {}
+@:image("assets/bg02.png") #if display private #end class __ASSET__assets_bg02_png extends lime.graphics.Image {}
+@:image("assets/bg03.png") #if display private #end class __ASSET__assets_bg03_png extends lime.graphics.Image {}
+@:file("assets/data/params.json") #if display private #end class __ASSET__assets_data_params_json extends lime.utils.Bytes {}
 @:image("assets/images/Bathroom_V1.png") #if display private #end class __ASSET__assets_images_bathroom_v1_png extends lime.graphics.Image {}
 @:image("assets/images/Bed_V1.png") #if display private #end class __ASSET__assets_images_bed_v1_png extends lime.graphics.Image {}
 @:image("assets/images/DeskAnim_V1.png") #if display private #end class __ASSET__assets_images_deskanim_v1_png extends lime.graphics.Image {}
@@ -938,12 +1026,15 @@ class DefaultAssetLibrary extends AssetLibrary {
 @:image("assets/images/sink_V1.png") #if display private #end class __ASSET__assets_images_sink_v1_png extends lime.graphics.Image {}
 @:image("assets/images/TVCouch_V1.png") #if display private #end class __ASSET__assets_images_tvcouch_v1_png extends lime.graphics.Image {}
 @:image("assets/images/window_V1.png") #if display private #end class __ASSET__assets_images_window_v1_png extends lime.graphics.Image {}
+@:font("assets/pixelarial.ttf") #if display private #end class __ASSET__assets_pixelarial_ttf extends lime.text.Font {}
+@:font("assets/tiny.ttf") #if display private #end class __ASSET__assets_tiny_ttf extends lime.text.Font {}
 @:file("C:/HaxeToolkit/haxe/lib/flixel/4,2,0/assets/sounds/beep.mp3") #if display private #end class __ASSET__flixel_sounds_beep_mp3 extends lime.utils.Bytes {}
 @:file("C:/HaxeToolkit/haxe/lib/flixel/4,2,0/assets/sounds/flixel.mp3") #if display private #end class __ASSET__flixel_sounds_flixel_mp3 extends lime.utils.Bytes {}
 @:font("C:/HaxeToolkit/haxe/lib/flixel/4,2,0/assets/fonts/nokiafc22.ttf") #if display private #end class __ASSET__flixel_fonts_nokiafc22_ttf extends lime.text.Font {}
 @:font("C:/HaxeToolkit/haxe/lib/flixel/4,2,0/assets/fonts/monsterrat.ttf") #if display private #end class __ASSET__flixel_fonts_monsterrat_ttf extends lime.text.Font {}
 @:image("C:/HaxeToolkit/haxe/lib/flixel/4,2,0/assets/images/ui/button.png") #if display private #end class __ASSET__flixel_images_ui_button_png extends lime.graphics.Image {}
 @:image("C:/HaxeToolkit/haxe/lib/flixel/4,2,0/assets/images/logo/default.png") #if display private #end class __ASSET__flixel_images_logo_default_png extends lime.graphics.Image {}
+@:image("C:/HaxeToolkit/haxe/lib/djFlixel/git/source/assets/hud_icons.png") #if display private #end class __ASSET__assets_hud_icons_png extends lime.graphics.Image {}
 
 
 
@@ -951,6 +1042,8 @@ class DefaultAssetLibrary extends AssetLibrary {
 #end
 
 #if (openfl && !flash)
+@:keep #if display private #end class __ASSET__OPENFL__assets_pixelarial_ttf extends openfl.text.Font { public function new () { var font = new __ASSET__assets_pixelarial_ttf (); src = font.src; name = font.name; super (); }}
+@:keep #if display private #end class __ASSET__OPENFL__assets_tiny_ttf extends openfl.text.Font { public function new () { var font = new __ASSET__assets_tiny_ttf (); src = font.src; name = font.name; super (); }}
 @:keep #if display private #end class __ASSET__OPENFL__flixel_fonts_nokiafc22_ttf extends openfl.text.Font { public function new () { var font = new __ASSET__flixel_fonts_nokiafc22_ttf (); src = font.src; name = font.name; super (); }}
 @:keep #if display private #end class __ASSET__OPENFL__flixel_fonts_monsterrat_ttf extends openfl.text.Font { public function new () { var font = new __ASSET__flixel_fonts_monsterrat_ttf (); src = font.src; name = font.name; super (); }}
 

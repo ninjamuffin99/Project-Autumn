@@ -30,6 +30,22 @@ class ApplicationMain {
 		var types = [];
 		
 		
+		urls.push ("assets/bg01.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("assets/bg02.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("assets/bg03.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("assets/data/params.json");
+		types.push (lime.Assets.AssetType.TEXT);
+		
+		
 		urls.push ("assets/images/Bathroom_V1.png");
 		types.push (lime.Assets.AssetType.IMAGE);
 		
@@ -70,6 +86,14 @@ class ApplicationMain {
 		types.push (lime.Assets.AssetType.IMAGE);
 		
 		
+		urls.push ("Pixel Arial 11");
+		types.push (lime.Assets.AssetType.FONT);
+		
+		
+		urls.push ("Tiny Pixy");
+		types.push (lime.Assets.AssetType.FONT);
+		
+		
 		urls.push ("flixel/sounds/beep.mp3");
 		types.push (lime.Assets.AssetType.MUSIC);
 		
@@ -91,6 +115,10 @@ class ApplicationMain {
 		
 		
 		urls.push ("flixel/images/logo/default.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("assets/hud_icons.png");
 		types.push (lime.Assets.AssetType.IMAGE);
 		
 		
@@ -155,7 +183,7 @@ class ApplicationMain {
 		
 		config = {
 			
-			build: "38",
+			build: "54",
 			company: "NinjaMuffin",
 			file: "Dancing",
 			fps: 60,
