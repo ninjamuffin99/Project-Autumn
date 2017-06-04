@@ -1,5 +1,6 @@
 package;
 
+import Reg;
 import djFlixel.Controls;
 import djFlixel.FlxAutoText;
 import djFlixel.fx.StarfieldSimple;
@@ -38,10 +39,10 @@ class State_Dialog extends FlxState
 		dialogBox = new DialogBox(3, 16);
 		add(dialogBox);
 		dialogBox.y = FlxG.height - dialogBox.HEIGHT - 2;
-		
+
 		// This sets and starts the dialog
 		dialogBox.setDialog(Reg.JSON.dialog);
-		
+
 	}//---------------------------------------------------;
 		
 	// --

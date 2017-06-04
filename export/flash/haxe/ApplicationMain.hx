@@ -50,7 +50,23 @@ class ApplicationMain {
 		types.push (lime.Assets.AssetType.IMAGE);
 		
 		
+		urls.push ("assets/images/Bedroom.ase");
+		types.push (lime.Assets.AssetType.BINARY);
+		
+		
 		urls.push ("assets/images/Bed_V1.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("assets/images/ClassroomASSETS.ase");
+		types.push (lime.Assets.AssetType.BINARY);
+		
+		
+		urls.push ("assets/images/ClassroomTest1.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("assets/images/ClassroomV1.png");
 		types.push (lime.Assets.AssetType.IMAGE);
 		
 		
@@ -183,7 +199,7 @@ class ApplicationMain {
 		
 		config = {
 			
-			build: "57",
+			build: "63",
 			company: "NinjaMuffin",
 			file: "Dancing",
 			fps: 60,
