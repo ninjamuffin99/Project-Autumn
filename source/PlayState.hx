@@ -1,6 +1,5 @@
 package;
 
-import djFlixel.gui.DialogBox;
 import flixel.FlxG;
 import flixel.FlxSprite;
 import flixel.FlxState;
@@ -33,7 +32,6 @@ class PlayState extends FlxState
 	private var showerTimer:Float = 7.5;
 	private var computerTimer:Float = 7.5;
 	
-	var dialougeboxsink:DialogBox;
 	
 	
 	override public function create():Void
@@ -183,10 +181,6 @@ class PlayState extends FlxState
 					sink.animation.play("on");
 					cleaningup = true;
 					
-					add(dialougeboxsink);
-					dialougeboxsink = new DialogBox(2);
-					dialougeboxsink.setDialog(Reg.JSON.dialog);
-					dialougeboxsink.scrollFactor.x = 0;
 				}
 			}
 			if (cleaningup)

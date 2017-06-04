@@ -51,6 +51,13 @@ class DefaultAssetLibrary extends AssetLibrary {
 		
 		#if (openfl && !flash)
 		
+		openfl.text.Font.registerFont (__ASSET__OPENFL__assets_amstrad_ttf);
+		
+		
+		
+		
+		
+		
 		
 		
 		
@@ -70,7 +77,29 @@ class DefaultAssetLibrary extends AssetLibrary {
 		
 		
 		openfl.text.Font.registerFont (__ASSET__OPENFL__assets_pixelarial_ttf);
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		openfl.text.Font.registerFont (__ASSET__OPENFL__assets_tiny_ttf);
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		
 		
 		openfl.text.Font.registerFont (__ASSET__OPENFL__flixel_fonts_nokiafc22_ttf);
@@ -83,14 +112,24 @@ class DefaultAssetLibrary extends AssetLibrary {
 		
 		#if flash
 		
+		className.set ("assets/amstrad.ttf", __ASSET__assets_amstrad_ttf);
+		type.set ("assets/amstrad.ttf", AssetType.FONT);
 		className.set ("assets/bg01.png", __ASSET__assets_bg01_png);
 		type.set ("assets/bg01.png", AssetType.IMAGE);
 		className.set ("assets/bg02.png", __ASSET__assets_bg02_png);
 		type.set ("assets/bg02.png", AssetType.IMAGE);
 		className.set ("assets/bg03.png", __ASSET__assets_bg03_png);
 		type.set ("assets/bg03.png", AssetType.IMAGE);
+		className.set ("assets/bird_anim.png", __ASSET__assets_bird_anim_png);
+		type.set ("assets/bird_anim.png", AssetType.IMAGE);
+		className.set ("assets/data/oldparams.json", __ASSET__assets_data_oldparams_json);
+		type.set ("assets/data/oldparams.json", AssetType.TEXT);
 		className.set ("assets/data/params.json", __ASSET__assets_data_params_json);
 		type.set ("assets/data/params.json", AssetType.TEXT);
+		className.set ("assets/DJLOGO.png", __ASSET__assets_djlogo_png);
+		type.set ("assets/DJLOGO.png", AssetType.IMAGE);
+		className.set ("assets/HAXELOGO.png", __ASSET__assets_haxelogo_png);
+		type.set ("assets/HAXELOGO.png", AssetType.IMAGE);
 		className.set ("assets/images/Bathroom_V1.png", __ASSET__assets_images_bathroom_v1_png);
 		type.set ("assets/images/Bathroom_V1.png", AssetType.IMAGE);
 		className.set ("assets/images/Bedroom.ase", __ASSET__assets_images_bedroom_ase);
@@ -119,10 +158,58 @@ class DefaultAssetLibrary extends AssetLibrary {
 		type.set ("assets/images/TVCouch_V1.png", AssetType.IMAGE);
 		className.set ("assets/images/window_V1.png", __ASSET__assets_images_window_v1_png);
 		type.set ("assets/images/window_V1.png", AssetType.IMAGE);
+		className.set ("assets/music/track1.mp3", __ASSET__assets_music_track1_mp3);
+		type.set ("assets/music/track1.mp3", AssetType.MUSIC);
+		className.set ("assets/music/track1.txt", __ASSET__assets_music_track1_txt);
+		type.set ("assets/music/track1.txt", AssetType.TEXT);
 		className.set ("assets/pixelarial.ttf", __ASSET__assets_pixelarial_ttf);
 		type.set ("assets/pixelarial.ttf", AssetType.FONT);
+		className.set ("assets/sounds/cursor_error.mp3", __ASSET__assets_sounds_cursor_error_mp3);
+		type.set ("assets/sounds/cursor_error.mp3", AssetType.MUSIC);
+		className.set ("assets/sounds/cursor_high.mp3", __ASSET__assets_sounds_cursor_high_mp3);
+		type.set ("assets/sounds/cursor_high.mp3", AssetType.MUSIC);
+		className.set ("assets/sounds/cursor_low.mp3", __ASSET__assets_sounds_cursor_low_mp3);
+		type.set ("assets/sounds/cursor_low.mp3", AssetType.MUSIC);
+		className.set ("assets/sounds/cursor_tick.mp3", __ASSET__assets_sounds_cursor_tick_mp3);
+		type.set ("assets/sounds/cursor_tick.mp3", AssetType.MUSIC);
+		className.set ("assets/sounds/fx1.mp3", __ASSET__assets_sounds_fx1_mp3);
+		type.set ("assets/sounds/fx1.mp3", AssetType.MUSIC);
+		className.set ("assets/sounds/fx2.mp3", __ASSET__assets_sounds_fx2_mp3);
+		type.set ("assets/sounds/fx2.mp3", AssetType.MUSIC);
+		className.set ("assets/sounds/fx3.mp3", __ASSET__assets_sounds_fx3_mp3);
+		type.set ("assets/sounds/fx3.mp3", AssetType.MUSIC);
+		className.set ("assets/sounds/fx4.mp3", __ASSET__assets_sounds_fx4_mp3);
+		type.set ("assets/sounds/fx4.mp3", AssetType.MUSIC);
+		className.set ("assets/sounds/short1.mp3", __ASSET__assets_sounds_short1_mp3);
+		type.set ("assets/sounds/short1.mp3", AssetType.MUSIC);
+		className.set ("assets/sounds/short2.mp3", __ASSET__assets_sounds_short2_mp3);
+		type.set ("assets/sounds/short2.mp3", AssetType.MUSIC);
+		className.set ("assets/stripe_01.png", __ASSET__assets_stripe_01_png);
+		type.set ("assets/stripe_01.png", AssetType.IMAGE);
 		className.set ("assets/tiny.ttf", __ASSET__assets_tiny_ttf);
 		type.set ("assets/tiny.ttf", AssetType.FONT);
+		className.set ("assets/music/track1.mp3", __ASSET__assets_music_track2);
+		type.set ("assets/music/track1.mp3", AssetType.MUSIC);
+		className.set ("assets/sounds/cursor_error.mp3", __ASSET__assets_sounds_cursor_error_mp4);
+		type.set ("assets/sounds/cursor_error.mp3", AssetType.MUSIC);
+		className.set ("assets/sounds/cursor_high.mp3", __ASSET__assets_sounds_cursor_high_mp4);
+		type.set ("assets/sounds/cursor_high.mp3", AssetType.MUSIC);
+		className.set ("assets/sounds/cursor_low.mp3", __ASSET__assets_sounds_cursor_low_mp4);
+		type.set ("assets/sounds/cursor_low.mp3", AssetType.MUSIC);
+		className.set ("assets/sounds/cursor_tick.mp3", __ASSET__assets_sounds_cursor_tick_mp4);
+		type.set ("assets/sounds/cursor_tick.mp3", AssetType.MUSIC);
+		className.set ("assets/sounds/fx1.mp3", __ASSET__assets_sounds_fx2);
+		type.set ("assets/sounds/fx1.mp3", AssetType.MUSIC);
+		className.set ("assets/sounds/fx2.mp3", __ASSET__assets_sounds_fx3);
+		type.set ("assets/sounds/fx2.mp3", AssetType.MUSIC);
+		className.set ("assets/sounds/fx3.mp3", __ASSET__assets_sounds_fx4);
+		type.set ("assets/sounds/fx3.mp3", AssetType.MUSIC);
+		className.set ("assets/sounds/fx4.mp3", __ASSET__assets_sounds_fx5);
+		type.set ("assets/sounds/fx4.mp3", AssetType.MUSIC);
+		className.set ("assets/sounds/short1.mp3", __ASSET__assets_sounds_short2);
+		type.set ("assets/sounds/short1.mp3", AssetType.MUSIC);
+		className.set ("assets/sounds/short2.mp3", __ASSET__assets_sounds_short3);
+		type.set ("assets/sounds/short2.mp3", AssetType.MUSIC);
 		className.set ("flixel/sounds/beep.mp3", __ASSET__flixel_sounds_beep_mp3);
 		type.set ("flixel/sounds/beep.mp3", AssetType.MUSIC);
 		className.set ("flixel/sounds/flixel.mp3", __ASSET__flixel_sounds_flixel_mp3);
@@ -142,6 +229,10 @@ class DefaultAssetLibrary extends AssetLibrary {
 		#elseif html5
 		
 		var id;
+		id = "assets/amstrad.ttf";
+		className.set (id, __ASSET__assets_amstrad_ttf);
+		
+		type.set (id, AssetType.FONT);
 		id = "assets/bg01.png";
 		path.set (id, id);
 		
@@ -154,10 +245,26 @@ class DefaultAssetLibrary extends AssetLibrary {
 		path.set (id, id);
 		
 		type.set (id, AssetType.IMAGE);
+		id = "assets/bird_anim.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "assets/data/oldparams.json";
+		path.set (id, id);
+		
+		type.set (id, AssetType.TEXT);
 		id = "assets/data/params.json";
 		path.set (id, id);
 		
 		type.set (id, AssetType.TEXT);
+		id = "assets/DJLOGO.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "assets/HAXELOGO.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
 		id = "assets/images/Bathroom_V1.png";
 		path.set (id, id);
 		
@@ -214,14 +321,110 @@ class DefaultAssetLibrary extends AssetLibrary {
 		path.set (id, id);
 		
 		type.set (id, AssetType.IMAGE);
+		id = "assets/music/track1.mp3";
+		path.set (id, id);
+		
+		type.set (id, AssetType.MUSIC);
+		id = "assets/music/track1.txt";
+		path.set (id, id);
+		
+		type.set (id, AssetType.TEXT);
 		id = "assets/pixelarial.ttf";
 		className.set (id, __ASSET__assets_pixelarial_ttf);
 		
 		type.set (id, AssetType.FONT);
+		id = "assets/sounds/cursor_error.mp3";
+		path.set (id, id);
+		
+		type.set (id, AssetType.MUSIC);
+		id = "assets/sounds/cursor_high.mp3";
+		path.set (id, id);
+		
+		type.set (id, AssetType.MUSIC);
+		id = "assets/sounds/cursor_low.mp3";
+		path.set (id, id);
+		
+		type.set (id, AssetType.MUSIC);
+		id = "assets/sounds/cursor_tick.mp3";
+		path.set (id, id);
+		
+		type.set (id, AssetType.MUSIC);
+		id = "assets/sounds/fx1.mp3";
+		path.set (id, id);
+		
+		type.set (id, AssetType.MUSIC);
+		id = "assets/sounds/fx2.mp3";
+		path.set (id, id);
+		
+		type.set (id, AssetType.MUSIC);
+		id = "assets/sounds/fx3.mp3";
+		path.set (id, id);
+		
+		type.set (id, AssetType.MUSIC);
+		id = "assets/sounds/fx4.mp3";
+		path.set (id, id);
+		
+		type.set (id, AssetType.MUSIC);
+		id = "assets/sounds/short1.mp3";
+		path.set (id, id);
+		
+		type.set (id, AssetType.MUSIC);
+		id = "assets/sounds/short2.mp3";
+		path.set (id, id);
+		
+		type.set (id, AssetType.MUSIC);
+		id = "assets/stripe_01.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
 		id = "assets/tiny.ttf";
 		className.set (id, __ASSET__assets_tiny_ttf);
 		
 		type.set (id, AssetType.FONT);
+		id = "assets/music/track1.mp3";
+		path.set (id, id);
+		
+		type.set (id, AssetType.MUSIC);
+		id = "assets/sounds/cursor_error.mp3";
+		path.set (id, id);
+		
+		type.set (id, AssetType.MUSIC);
+		id = "assets/sounds/cursor_high.mp3";
+		path.set (id, id);
+		
+		type.set (id, AssetType.MUSIC);
+		id = "assets/sounds/cursor_low.mp3";
+		path.set (id, id);
+		
+		type.set (id, AssetType.MUSIC);
+		id = "assets/sounds/cursor_tick.mp3";
+		path.set (id, id);
+		
+		type.set (id, AssetType.MUSIC);
+		id = "assets/sounds/fx1.mp3";
+		path.set (id, id);
+		
+		type.set (id, AssetType.MUSIC);
+		id = "assets/sounds/fx2.mp3";
+		path.set (id, id);
+		
+		type.set (id, AssetType.MUSIC);
+		id = "assets/sounds/fx3.mp3";
+		path.set (id, id);
+		
+		type.set (id, AssetType.MUSIC);
+		id = "assets/sounds/fx4.mp3";
+		path.set (id, id);
+		
+		type.set (id, AssetType.MUSIC);
+		id = "assets/sounds/short1.mp3";
+		path.set (id, id);
+		
+		type.set (id, AssetType.MUSIC);
+		id = "assets/sounds/short2.mp3";
+		path.set (id, id);
+		
+		type.set (id, AssetType.MUSIC);
 		id = "flixel/sounds/beep.mp3";
 		path.set (id, id);
 		
@@ -268,6 +471,9 @@ class DefaultAssetLibrary extends AssetLibrary {
 		
 		var useManifest = false;
 		
+		className.set ("assets/amstrad.ttf", __ASSET__assets_amstrad_ttf);
+		type.set ("assets/amstrad.ttf", AssetType.FONT);
+		
 		className.set ("assets/bg01.png", __ASSET__assets_bg01_png);
 		type.set ("assets/bg01.png", AssetType.IMAGE);
 		
@@ -277,8 +483,20 @@ class DefaultAssetLibrary extends AssetLibrary {
 		className.set ("assets/bg03.png", __ASSET__assets_bg03_png);
 		type.set ("assets/bg03.png", AssetType.IMAGE);
 		
+		className.set ("assets/bird_anim.png", __ASSET__assets_bird_anim_png);
+		type.set ("assets/bird_anim.png", AssetType.IMAGE);
+		
+		className.set ("assets/data/oldparams.json", __ASSET__assets_data_oldparams_json);
+		type.set ("assets/data/oldparams.json", AssetType.TEXT);
+		
 		className.set ("assets/data/params.json", __ASSET__assets_data_params_json);
 		type.set ("assets/data/params.json", AssetType.TEXT);
+		
+		className.set ("assets/DJLOGO.png", __ASSET__assets_djlogo_png);
+		type.set ("assets/DJLOGO.png", AssetType.IMAGE);
+		
+		className.set ("assets/HAXELOGO.png", __ASSET__assets_haxelogo_png);
+		type.set ("assets/HAXELOGO.png", AssetType.IMAGE);
 		
 		className.set ("assets/images/Bathroom_V1.png", __ASSET__assets_images_bathroom_v1_png);
 		type.set ("assets/images/Bathroom_V1.png", AssetType.IMAGE);
@@ -322,11 +540,83 @@ class DefaultAssetLibrary extends AssetLibrary {
 		className.set ("assets/images/window_V1.png", __ASSET__assets_images_window_v1_png);
 		type.set ("assets/images/window_V1.png", AssetType.IMAGE);
 		
+		className.set ("assets/music/track1.mp3", __ASSET__assets_music_track1_mp3);
+		type.set ("assets/music/track1.mp3", AssetType.MUSIC);
+		
+		className.set ("assets/music/track1.txt", __ASSET__assets_music_track1_txt);
+		type.set ("assets/music/track1.txt", AssetType.TEXT);
+		
 		className.set ("assets/pixelarial.ttf", __ASSET__assets_pixelarial_ttf);
 		type.set ("assets/pixelarial.ttf", AssetType.FONT);
 		
+		className.set ("assets/sounds/cursor_error.mp3", __ASSET__assets_sounds_cursor_error_mp3);
+		type.set ("assets/sounds/cursor_error.mp3", AssetType.MUSIC);
+		
+		className.set ("assets/sounds/cursor_high.mp3", __ASSET__assets_sounds_cursor_high_mp3);
+		type.set ("assets/sounds/cursor_high.mp3", AssetType.MUSIC);
+		
+		className.set ("assets/sounds/cursor_low.mp3", __ASSET__assets_sounds_cursor_low_mp3);
+		type.set ("assets/sounds/cursor_low.mp3", AssetType.MUSIC);
+		
+		className.set ("assets/sounds/cursor_tick.mp3", __ASSET__assets_sounds_cursor_tick_mp3);
+		type.set ("assets/sounds/cursor_tick.mp3", AssetType.MUSIC);
+		
+		className.set ("assets/sounds/fx1.mp3", __ASSET__assets_sounds_fx1_mp3);
+		type.set ("assets/sounds/fx1.mp3", AssetType.MUSIC);
+		
+		className.set ("assets/sounds/fx2.mp3", __ASSET__assets_sounds_fx2_mp3);
+		type.set ("assets/sounds/fx2.mp3", AssetType.MUSIC);
+		
+		className.set ("assets/sounds/fx3.mp3", __ASSET__assets_sounds_fx3_mp3);
+		type.set ("assets/sounds/fx3.mp3", AssetType.MUSIC);
+		
+		className.set ("assets/sounds/fx4.mp3", __ASSET__assets_sounds_fx4_mp3);
+		type.set ("assets/sounds/fx4.mp3", AssetType.MUSIC);
+		
+		className.set ("assets/sounds/short1.mp3", __ASSET__assets_sounds_short1_mp3);
+		type.set ("assets/sounds/short1.mp3", AssetType.MUSIC);
+		
+		className.set ("assets/sounds/short2.mp3", __ASSET__assets_sounds_short2_mp3);
+		type.set ("assets/sounds/short2.mp3", AssetType.MUSIC);
+		
+		className.set ("assets/stripe_01.png", __ASSET__assets_stripe_01_png);
+		type.set ("assets/stripe_01.png", AssetType.IMAGE);
+		
 		className.set ("assets/tiny.ttf", __ASSET__assets_tiny_ttf);
 		type.set ("assets/tiny.ttf", AssetType.FONT);
+		
+		className.set ("assets/music/track1.mp3", __ASSET__assets_music_track2);
+		type.set ("assets/music/track1.mp3", AssetType.MUSIC);
+		
+		className.set ("assets/sounds/cursor_error.mp3", __ASSET__assets_sounds_cursor_error_mp4);
+		type.set ("assets/sounds/cursor_error.mp3", AssetType.MUSIC);
+		
+		className.set ("assets/sounds/cursor_high.mp3", __ASSET__assets_sounds_cursor_high_mp4);
+		type.set ("assets/sounds/cursor_high.mp3", AssetType.MUSIC);
+		
+		className.set ("assets/sounds/cursor_low.mp3", __ASSET__assets_sounds_cursor_low_mp4);
+		type.set ("assets/sounds/cursor_low.mp3", AssetType.MUSIC);
+		
+		className.set ("assets/sounds/cursor_tick.mp3", __ASSET__assets_sounds_cursor_tick_mp4);
+		type.set ("assets/sounds/cursor_tick.mp3", AssetType.MUSIC);
+		
+		className.set ("assets/sounds/fx1.mp3", __ASSET__assets_sounds_fx2);
+		type.set ("assets/sounds/fx1.mp3", AssetType.MUSIC);
+		
+		className.set ("assets/sounds/fx2.mp3", __ASSET__assets_sounds_fx3);
+		type.set ("assets/sounds/fx2.mp3", AssetType.MUSIC);
+		
+		className.set ("assets/sounds/fx3.mp3", __ASSET__assets_sounds_fx4);
+		type.set ("assets/sounds/fx3.mp3", AssetType.MUSIC);
+		
+		className.set ("assets/sounds/fx4.mp3", __ASSET__assets_sounds_fx5);
+		type.set ("assets/sounds/fx4.mp3", AssetType.MUSIC);
+		
+		className.set ("assets/sounds/short1.mp3", __ASSET__assets_sounds_short2);
+		type.set ("assets/sounds/short1.mp3", AssetType.MUSIC);
+		
+		className.set ("assets/sounds/short2.mp3", __ASSET__assets_sounds_short3);
+		type.set ("assets/sounds/short2.mp3", AssetType.MUSIC);
 		
 		className.set ("flixel/sounds/beep.mp3", __ASSET__flixel_sounds_beep_mp3);
 		type.set ("flixel/sounds/beep.mp3", AssetType.MUSIC);
@@ -993,10 +1283,15 @@ class DefaultAssetLibrary extends AssetLibrary {
 #if !display
 #if flash
 
+@:keep @:bind #if display private #end class __ASSET__assets_amstrad_ttf extends flash.text.Font { }
 @:keep @:bind #if display private #end class __ASSET__assets_bg01_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__assets_bg02_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__assets_bg03_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_bird_anim_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_data_oldparams_json extends flash.utils.ByteArray { }
 @:keep @:bind #if display private #end class __ASSET__assets_data_params_json extends flash.utils.ByteArray { }
+@:keep @:bind #if display private #end class __ASSET__assets_djlogo_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_haxelogo_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__assets_images_bathroom_v1_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__assets_images_bedroom_ase extends flash.utils.ByteArray { }
 @:keep @:bind #if display private #end class __ASSET__assets_images_bed_v1_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
@@ -1011,8 +1306,32 @@ class DefaultAssetLibrary extends AssetLibrary {
 @:keep @:bind #if display private #end class __ASSET__assets_images_sink_v1_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__assets_images_tvcouch_v1_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__assets_images_window_v1_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_music_track1_mp3 extends flash.media.Sound { }
+@:keep @:bind #if display private #end class __ASSET__assets_music_track1_txt extends flash.utils.ByteArray { }
 @:keep @:bind #if display private #end class __ASSET__assets_pixelarial_ttf extends flash.text.Font { }
+@:keep @:bind #if display private #end class __ASSET__assets_sounds_cursor_error_mp3 extends flash.media.Sound { }
+@:keep @:bind #if display private #end class __ASSET__assets_sounds_cursor_high_mp3 extends flash.media.Sound { }
+@:keep @:bind #if display private #end class __ASSET__assets_sounds_cursor_low_mp3 extends flash.media.Sound { }
+@:keep @:bind #if display private #end class __ASSET__assets_sounds_cursor_tick_mp3 extends flash.media.Sound { }
+@:keep @:bind #if display private #end class __ASSET__assets_sounds_fx1_mp3 extends flash.media.Sound { }
+@:keep @:bind #if display private #end class __ASSET__assets_sounds_fx2_mp3 extends flash.media.Sound { }
+@:keep @:bind #if display private #end class __ASSET__assets_sounds_fx3_mp3 extends flash.media.Sound { }
+@:keep @:bind #if display private #end class __ASSET__assets_sounds_fx4_mp3 extends flash.media.Sound { }
+@:keep @:bind #if display private #end class __ASSET__assets_sounds_short1_mp3 extends flash.media.Sound { }
+@:keep @:bind #if display private #end class __ASSET__assets_sounds_short2_mp3 extends flash.media.Sound { }
+@:keep @:bind #if display private #end class __ASSET__assets_stripe_01_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__assets_tiny_ttf extends flash.text.Font { }
+@:keep @:bind #if display private #end class __ASSET__assets_music_track2 extends flash.media.Sound { }
+@:keep @:bind #if display private #end class __ASSET__assets_sounds_cursor_error_mp4 extends flash.media.Sound { }
+@:keep @:bind #if display private #end class __ASSET__assets_sounds_cursor_high_mp4 extends flash.media.Sound { }
+@:keep @:bind #if display private #end class __ASSET__assets_sounds_cursor_low_mp4 extends flash.media.Sound { }
+@:keep @:bind #if display private #end class __ASSET__assets_sounds_cursor_tick_mp4 extends flash.media.Sound { }
+@:keep @:bind #if display private #end class __ASSET__assets_sounds_fx2 extends flash.media.Sound { }
+@:keep @:bind #if display private #end class __ASSET__assets_sounds_fx3 extends flash.media.Sound { }
+@:keep @:bind #if display private #end class __ASSET__assets_sounds_fx4 extends flash.media.Sound { }
+@:keep @:bind #if display private #end class __ASSET__assets_sounds_fx5 extends flash.media.Sound { }
+@:keep @:bind #if display private #end class __ASSET__assets_sounds_short2 extends flash.media.Sound { }
+@:keep @:bind #if display private #end class __ASSET__assets_sounds_short3 extends flash.media.Sound { }
 @:keep @:bind #if display private #end class __ASSET__flixel_sounds_beep_mp3 extends flash.media.Sound { }
 @:keep @:bind #if display private #end class __ASSET__flixel_sounds_flixel_mp3 extends flash.media.Sound { }
 @:keep @:bind #if display private #end class __ASSET__flixel_fonts_nokiafc22_ttf extends flash.text.Font { }
@@ -1023,6 +1342,13 @@ class DefaultAssetLibrary extends AssetLibrary {
 
 
 #elseif html5
+
+@:keep #if display private #end class __ASSET__assets_amstrad_ttf extends lime.text.Font { public function new () { super (); name = "Amstrad CPC464 Regular"; } } 
+
+
+
+
+
 
 
 
@@ -1043,7 +1369,29 @@ class DefaultAssetLibrary extends AssetLibrary {
 
 
 @:keep #if display private #end class __ASSET__assets_pixelarial_ttf extends lime.text.Font { public function new () { super (); name = "Pixel Arial 11"; } } 
+
+
+
+
+
+
+
+
+
+
+
 @:keep #if display private #end class __ASSET__assets_tiny_ttf extends lime.text.Font { public function new () { super (); name = "Tiny Pixy"; } } 
+
+
+
+
+
+
+
+
+
+
+
 
 
 @:keep #if display private #end class __ASSET__flixel_fonts_nokiafc22_ttf extends lime.text.Font { public function new () { super (); name = "Nokia Cellphone FC Small"; } } 
@@ -1060,10 +1408,15 @@ class DefaultAssetLibrary extends AssetLibrary {
 #if (windows || mac || linux || cpp)
 
 
+@:font("assets/amstrad.ttf") #if display private #end class __ASSET__assets_amstrad_ttf extends lime.text.Font {}
 @:image("assets/bg01.png") #if display private #end class __ASSET__assets_bg01_png extends lime.graphics.Image {}
 @:image("assets/bg02.png") #if display private #end class __ASSET__assets_bg02_png extends lime.graphics.Image {}
 @:image("assets/bg03.png") #if display private #end class __ASSET__assets_bg03_png extends lime.graphics.Image {}
+@:image("assets/bird_anim.png") #if display private #end class __ASSET__assets_bird_anim_png extends lime.graphics.Image {}
+@:file("assets/data/oldparams.json") #if display private #end class __ASSET__assets_data_oldparams_json extends lime.utils.Bytes {}
 @:file("assets/data/params.json") #if display private #end class __ASSET__assets_data_params_json extends lime.utils.Bytes {}
+@:image("assets/DJLOGO.png") #if display private #end class __ASSET__assets_djlogo_png extends lime.graphics.Image {}
+@:image("assets/HAXELOGO.png") #if display private #end class __ASSET__assets_haxelogo_png extends lime.graphics.Image {}
 @:image("assets/images/Bathroom_V1.png") #if display private #end class __ASSET__assets_images_bathroom_v1_png extends lime.graphics.Image {}
 @:file("assets/images/Bedroom.ase") #if display private #end class __ASSET__assets_images_bedroom_ase extends lime.utils.Bytes {}
 @:image("assets/images/Bed_V1.png") #if display private #end class __ASSET__assets_images_bed_v1_png extends lime.graphics.Image {}
@@ -1078,8 +1431,32 @@ class DefaultAssetLibrary extends AssetLibrary {
 @:image("assets/images/sink_V1.png") #if display private #end class __ASSET__assets_images_sink_v1_png extends lime.graphics.Image {}
 @:image("assets/images/TVCouch_V1.png") #if display private #end class __ASSET__assets_images_tvcouch_v1_png extends lime.graphics.Image {}
 @:image("assets/images/window_V1.png") #if display private #end class __ASSET__assets_images_window_v1_png extends lime.graphics.Image {}
+@:file("assets/music/track1.mp3") #if display private #end class __ASSET__assets_music_track1_mp3 extends lime.utils.Bytes {}
+@:file("assets/music/track1.txt") #if display private #end class __ASSET__assets_music_track1_txt extends lime.utils.Bytes {}
 @:font("assets/pixelarial.ttf") #if display private #end class __ASSET__assets_pixelarial_ttf extends lime.text.Font {}
+@:file("assets/sounds/cursor_error.mp3") #if display private #end class __ASSET__assets_sounds_cursor_error_mp3 extends lime.utils.Bytes {}
+@:file("assets/sounds/cursor_high.mp3") #if display private #end class __ASSET__assets_sounds_cursor_high_mp3 extends lime.utils.Bytes {}
+@:file("assets/sounds/cursor_low.mp3") #if display private #end class __ASSET__assets_sounds_cursor_low_mp3 extends lime.utils.Bytes {}
+@:file("assets/sounds/cursor_tick.mp3") #if display private #end class __ASSET__assets_sounds_cursor_tick_mp3 extends lime.utils.Bytes {}
+@:file("assets/sounds/fx1.mp3") #if display private #end class __ASSET__assets_sounds_fx1_mp3 extends lime.utils.Bytes {}
+@:file("assets/sounds/fx2.mp3") #if display private #end class __ASSET__assets_sounds_fx2_mp3 extends lime.utils.Bytes {}
+@:file("assets/sounds/fx3.mp3") #if display private #end class __ASSET__assets_sounds_fx3_mp3 extends lime.utils.Bytes {}
+@:file("assets/sounds/fx4.mp3") #if display private #end class __ASSET__assets_sounds_fx4_mp3 extends lime.utils.Bytes {}
+@:file("assets/sounds/short1.mp3") #if display private #end class __ASSET__assets_sounds_short1_mp3 extends lime.utils.Bytes {}
+@:file("assets/sounds/short2.mp3") #if display private #end class __ASSET__assets_sounds_short2_mp3 extends lime.utils.Bytes {}
+@:image("assets/stripe_01.png") #if display private #end class __ASSET__assets_stripe_01_png extends lime.graphics.Image {}
 @:font("assets/tiny.ttf") #if display private #end class __ASSET__assets_tiny_ttf extends lime.text.Font {}
+@:file("assets/music/track1.mp3") #if display private #end class __ASSET__assets_music_track2 extends lime.utils.Bytes {}
+@:file("assets/sounds/cursor_error.mp3") #if display private #end class __ASSET__assets_sounds_cursor_error_mp4 extends lime.utils.Bytes {}
+@:file("assets/sounds/cursor_high.mp3") #if display private #end class __ASSET__assets_sounds_cursor_high_mp4 extends lime.utils.Bytes {}
+@:file("assets/sounds/cursor_low.mp3") #if display private #end class __ASSET__assets_sounds_cursor_low_mp4 extends lime.utils.Bytes {}
+@:file("assets/sounds/cursor_tick.mp3") #if display private #end class __ASSET__assets_sounds_cursor_tick_mp4 extends lime.utils.Bytes {}
+@:file("assets/sounds/fx1.mp3") #if display private #end class __ASSET__assets_sounds_fx2 extends lime.utils.Bytes {}
+@:file("assets/sounds/fx2.mp3") #if display private #end class __ASSET__assets_sounds_fx3 extends lime.utils.Bytes {}
+@:file("assets/sounds/fx3.mp3") #if display private #end class __ASSET__assets_sounds_fx4 extends lime.utils.Bytes {}
+@:file("assets/sounds/fx4.mp3") #if display private #end class __ASSET__assets_sounds_fx5 extends lime.utils.Bytes {}
+@:file("assets/sounds/short1.mp3") #if display private #end class __ASSET__assets_sounds_short2 extends lime.utils.Bytes {}
+@:file("assets/sounds/short2.mp3") #if display private #end class __ASSET__assets_sounds_short3 extends lime.utils.Bytes {}
 @:file("C:/HaxeToolkit/haxe/lib/flixel/4,2,1/assets/sounds/beep.mp3") #if display private #end class __ASSET__flixel_sounds_beep_mp3 extends lime.utils.Bytes {}
 @:file("C:/HaxeToolkit/haxe/lib/flixel/4,2,1/assets/sounds/flixel.mp3") #if display private #end class __ASSET__flixel_sounds_flixel_mp3 extends lime.utils.Bytes {}
 @:font("C:/HaxeToolkit/haxe/lib/flixel/4,2,1/assets/fonts/nokiafc22.ttf") #if display private #end class __ASSET__flixel_fonts_nokiafc22_ttf extends lime.text.Font {}
@@ -1094,6 +1471,7 @@ class DefaultAssetLibrary extends AssetLibrary {
 #end
 
 #if (openfl && !flash)
+@:keep #if display private #end class __ASSET__OPENFL__assets_amstrad_ttf extends openfl.text.Font { public function new () { var font = new __ASSET__assets_amstrad_ttf (); src = font.src; name = font.name; super (); }}
 @:keep #if display private #end class __ASSET__OPENFL__assets_pixelarial_ttf extends openfl.text.Font { public function new () { var font = new __ASSET__assets_pixelarial_ttf (); src = font.src; name = font.name; super (); }}
 @:keep #if display private #end class __ASSET__OPENFL__assets_tiny_ttf extends openfl.text.Font { public function new () { var font = new __ASSET__assets_tiny_ttf (); src = font.src; name = font.name; super (); }}
 @:keep #if display private #end class __ASSET__OPENFL__flixel_fonts_nokiafc22_ttf extends openfl.text.Font { public function new () { var font = new __ASSET__flixel_fonts_nokiafc22_ttf (); src = font.src; name = font.name; super (); }}
