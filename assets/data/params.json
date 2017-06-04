@@ -2,7 +2,7 @@
 	"sys" : {
 		"NAME" : "djFlixel MegaDemo",
 		"VERSION" : "0.3.0",
-		"ANTIALIASING" : true,
+		"ANTIALIASING" : false,
 		"FULLSCREEN" : false,
 		"VOLUME" : 0.7
 	},

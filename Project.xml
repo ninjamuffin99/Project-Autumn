@@ -52,6 +52,8 @@
 	
 	<!-- ______________________________ Haxedefines _____________________________ -->
 	
+	<haxedef name="EXTERNAL_LOAD"/> 
+	
 	<!--Enable the Flixel core recording system-->
 	<!--<haxedef name="FLX_RECORD" />-->
 	

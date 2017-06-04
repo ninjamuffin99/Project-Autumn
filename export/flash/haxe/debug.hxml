@@ -16,6 +16,7 @@
 -D openfl-next
 -D FLX_NO_FOCUS_LOST_SCREEN
 -D tools=2.9.1
+-D EXTERNAL_LOAD
 -D flash-use-stage
 -D no-compilation
 -D openfl-flash

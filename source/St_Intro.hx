@@ -120,7 +120,7 @@ class St_Intro extends FlxState
 	// -- The sequence is complete
 	function complete()
 	{
-		FlxG.switchState(new St_Intro2());
+		FlxG.switchState(new PlayState());
 	}//---------------------------------------------------;
 	
 	// --
