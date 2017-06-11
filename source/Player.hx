@@ -38,6 +38,7 @@ class Player extends FlxSprite
 		}
 		
 		FlxG.watch.add(this, "x");
+		FlxG.watch.add(this, "velocity");
 		FlxG.watch.addMouse();
 		
 		super.update(elapsed);
@@ -78,5 +79,25 @@ class Player extends FlxSprite
 					animation.play("walk");
 			}
 		}
+	}
+	
+	public function interact(object:FlxObject, sound:String = null, collision:Bool = false)
+	{
+		if (collision)
+		{
+			object.immovable = true;
+			FlxG.collide(this, object);
+		}
+		
+		if (FlxG.overlap(this, object))
+		{
+			if (FlxG.keys.justPressed.SPACE)
+			{
+				//change this so it calls a special function or something like sitdown if needed
+				
+				FlxG.sound.playMusic("assets/music/track1.mp3");
+			}
+		}
+		
 	}
 }
