@@ -31,6 +31,15 @@ class Player extends FlxSprite
 	override public function update(elapsed:Float):Void 
 	{
 		movement();
+		
+		if (FlxG.keys.justPressed.F)
+		{
+			FlxG.fullscreen = !FlxG.fullscreen;
+		}
+		
+		FlxG.watch.add(this, "x");
+		FlxG.watch.addMouse();
+		
 		super.update(elapsed);
 	}
 	

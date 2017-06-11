@@ -23,4 +23,9 @@ class Classroom extends TemplateLevel
 		super.create();
 	}
 	
+	override public function update(elapsed:Float):Void 
+	{
+		super.update(elapsed);
+	}
+	
 }
