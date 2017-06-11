@@ -76,6 +76,7 @@ class DefaultAssetLibrary extends AssetLibrary {
 		
 		
 		
+		
 		openfl.text.Font.registerFont (__ASSET__OPENFL__assets_pixelarial_ttf);
 		
 		
@@ -144,6 +145,8 @@ class DefaultAssetLibrary extends AssetLibrary {
 		type.set ("assets/images/ClassroomV1.png", AssetType.IMAGE);
 		className.set ("assets/images/DeskAnim_V1.png", __ASSET__assets_images_deskanim_v1_png);
 		type.set ("assets/images/DeskAnim_V1.png", AssetType.IMAGE);
+		className.set ("assets/images/hallways.ase", __ASSET__assets_images_hallways_ase);
+		type.set ("assets/images/hallways.ase", AssetType.BINARY);
 		className.set ("assets/images/houseBW.png", __ASSET__assets_images_housebw_png);
 		type.set ("assets/images/houseBW.png", AssetType.IMAGE);
 		className.set ("assets/images/lightswitch_V1.png", __ASSET__assets_images_lightswitch_v1_png);
@@ -293,6 +296,10 @@ class DefaultAssetLibrary extends AssetLibrary {
 		path.set (id, id);
 		
 		type.set (id, AssetType.IMAGE);
+		id = "assets/images/hallways.ase";
+		path.set (id, id);
+		
+		type.set (id, AssetType.BINARY);
 		id = "assets/images/houseBW.png";
 		path.set (id, id);
 		
@@ -518,6 +525,9 @@ class DefaultAssetLibrary extends AssetLibrary {
 		
 		className.set ("assets/images/DeskAnim_V1.png", __ASSET__assets_images_deskanim_v1_png);
 		type.set ("assets/images/DeskAnim_V1.png", AssetType.IMAGE);
+		
+		className.set ("assets/images/hallways.ase", __ASSET__assets_images_hallways_ase);
+		type.set ("assets/images/hallways.ase", AssetType.BINARY);
 		
 		className.set ("assets/images/houseBW.png", __ASSET__assets_images_housebw_png);
 		type.set ("assets/images/houseBW.png", AssetType.IMAGE);
@@ -1299,6 +1309,7 @@ class DefaultAssetLibrary extends AssetLibrary {
 @:keep @:bind #if display private #end class __ASSET__assets_images_classroomtest1_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__assets_images_classroomv1_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__assets_images_deskanim_v1_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images_hallways_ase extends flash.utils.ByteArray { }
 @:keep @:bind #if display private #end class __ASSET__assets_images_housebw_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__assets_images_lightswitch_v1_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__assets_images_oven_v1_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
@@ -1344,6 +1355,7 @@ class DefaultAssetLibrary extends AssetLibrary {
 #elseif html5
 
 @:keep #if display private #end class __ASSET__assets_amstrad_ttf extends lime.text.Font { public function new () { super (); name = "Amstrad CPC464 Regular"; } } 
+
 
 
 
@@ -1424,6 +1436,7 @@ class DefaultAssetLibrary extends AssetLibrary {
 @:image("assets/images/ClassroomTest1.png") #if display private #end class __ASSET__assets_images_classroomtest1_png extends lime.graphics.Image {}
 @:image("assets/images/ClassroomV1.png") #if display private #end class __ASSET__assets_images_classroomv1_png extends lime.graphics.Image {}
 @:image("assets/images/DeskAnim_V1.png") #if display private #end class __ASSET__assets_images_deskanim_v1_png extends lime.graphics.Image {}
+@:file("assets/images/hallways.ase") #if display private #end class __ASSET__assets_images_hallways_ase extends lime.utils.Bytes {}
 @:image("assets/images/houseBW.png") #if display private #end class __ASSET__assets_images_housebw_png extends lime.graphics.Image {}
 @:image("assets/images/lightswitch_V1.png") #if display private #end class __ASSET__assets_images_lightswitch_v1_png extends lime.graphics.Image {}
 @:image("assets/images/Oven_V1.png") #if display private #end class __ASSET__assets_images_oven_v1_png extends lime.graphics.Image {}

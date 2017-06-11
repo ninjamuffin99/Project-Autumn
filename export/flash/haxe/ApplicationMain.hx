@@ -94,6 +94,10 @@ class ApplicationMain {
 		types.push (lime.Assets.AssetType.IMAGE);
 		
 		
+		urls.push ("assets/images/hallways.ase");
+		types.push (lime.Assets.AssetType.BINARY);
+		
+		
 		urls.push ("assets/images/houseBW.png");
 		types.push (lime.Assets.AssetType.IMAGE);
 		
@@ -315,7 +319,7 @@ class ApplicationMain {
 		
 		config = {
 			
-			build: "68",
+			build: "89",
 			company: "NinjaMuffin",
 			file: "Dancing",
 			fps: 60,
