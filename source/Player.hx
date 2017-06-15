@@ -1,8 +1,10 @@
 package;
 
+import djFlixel.fx.BoxScroller;
 import flixel.FlxG;
 import flixel.FlxObject;
 import flixel.FlxSprite;
+import flixel.FlxState;
 import flixel.system.FlxAssets.FlxGraphicAsset;
 import flixel.util.FlxColor;
 
@@ -14,7 +16,6 @@ class Player extends FlxSprite
 {
 	public var speed:Float = 60;
 	private var interacting:Bool = false;
-	
 	public function new(?X:Float=0, ?Y:Float=0) 
 	{
 		super(X, Y);
@@ -82,7 +83,7 @@ class Player extends FlxSprite
 		}
 	}
 	
-	public function interact(object:FlxSprite, _animationON:String = "", _animationOFF:String = "", sound:String = null, collision:Bool = false, objectOffset:Float = 0)
+	public function interact(object:FlxSprite, _objAnimOnly:Bool,  _animationON:String = "", _animationOFF:String = "", sound:String = null, collision:Bool = false, objectOffset:Float = 0, Callback:Bool = false, CallbackFunc:Void->Void = null)
 	{
 		if (collision)
 		{
@@ -99,14 +100,24 @@ class Player extends FlxSprite
 		
 		if (FlxG.overlap(this, object))
 		{
+			
 			if (_btnInteract && !interacting)
 			{
+				
 				object.animation.play(_animationON);
 				FlxG.sound.play(sound);
-				visible = false;
-				interacting = true;
-				//change this so it calls a special function or something like sitdown if needed
 				
+				if (Callback)
+				{
+					CallbackFunc();
+				}
+				
+				//change this so it calls a special function or something like sitdown if needed
+				if (!_objAnimOnly)
+				{
+					visible = false;
+					interacting = true;
+				}
 				//FlxG.sound.playMusic("assets/music/track1.mp3");
 			}
 			

@@ -155,29 +155,18 @@ class PlayState extends FlxState
 			_player.x = 626;
 		}
 		
-		_player.interact(oven, "cooking", "off");
+		_player.interact(oven, false, "cooking", "off");
 		
-		_player.interact(sink, "on", "off");
+		_player.interact(sink, false, "on", "off");
 		
 		
+		_player.interact(lightswitch, true, "on", "off", null, false, 0, PlayState.lights);
 		
 		if (FlxG.overlap(_player, lightswitch))
 		{
 			if (FlxG.keys.anyJustPressed([SPACE, UP, W]))
 			{
-				if (lightson)
-				{
-					
-					lightswitch.animation.play("off");
-					FlxG.camera.alpha = 0.35;
-					lightson = false;
-				}
-				else
-				{
-					lightswitch.animation.play("on");
-					FlxG.camera.alpha = 1;
-					lightson = true;
-				}
+				
 			}
 		}
 		//keepts player in same place
@@ -286,4 +275,22 @@ class PlayState extends FlxState
 			sleeping = true;
 		}
 	}
+	
+	public function lights():Void
+	{
+		if (lightson)
+				{
+					
+					lightswitch.animation.play("off");
+					FlxG.camera.alpha = 0.35;
+					lightson = false;
+				}
+				else
+				{
+					lightswitch.animation.play("on");
+					FlxG.camera.alpha = 1;
+					lightson = true;
+				}
+	}
+	
 }
