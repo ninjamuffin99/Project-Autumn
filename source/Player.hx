@@ -13,6 +13,7 @@ import flixel.util.FlxColor;
 class Player extends FlxSprite
 {
 	public var speed:Float = 60;
+	private var interacting:Bool = false;
 	
 	public function new(?X:Float=0, ?Y:Float=0) 
 	{
@@ -49,8 +50,8 @@ class Player extends FlxSprite
 		var _left:Bool = false;
 		var _right:Bool = false;
 		
-		_left = FlxG.keys.anyPressed([LEFT, A]);
-		_right = FlxG.keys.anyPressed([RIGHT, D]);
+		_left = FlxG.keys.anyPressed([LEFT, A, J]);
+		_right = FlxG.keys.anyPressed([RIGHT, D, L]);
 		
 		if (_left && _right)
 			_left = _right = false;
@@ -81,7 +82,7 @@ class Player extends FlxSprite
 		}
 	}
 	
-	public function interact(object:FlxObject, sound:String = null, collision:Bool = false)
+	public function interact(object:FlxSprite, _animationON:String = "", _animationOFF:String = "", sound:String = null, collision:Bool = false, objectOffset:Float = 0)
 	{
 		if (collision)
 		{
@@ -89,13 +90,36 @@ class Player extends FlxSprite
 			FlxG.collide(this, object);
 		}
 		
+		var _btnInteract:Bool = false;
+		_btnInteract = FlxG.keys.anyJustPressed([SPACE, W, E, I, O, UP]);
+		
+		var _btnUninteract:Bool = false;
+		_btnUninteract = FlxG.keys.anyPressed([LEFT, A, J, RIGHT, D, L]);
+		
+		
 		if (FlxG.overlap(this, object))
 		{
-			if (FlxG.keys.justPressed.SPACE)
+			if (_btnInteract && !interacting)
 			{
+				object.animation.play(_animationON);
+				FlxG.sound.play(sound);
+				visible = false;
+				interacting = true;
 				//change this so it calls a special function or something like sitdown if needed
 				
-				FlxG.sound.playMusic("assets/music/track1.mp3");
+				//FlxG.sound.playMusic("assets/music/track1.mp3");
+			}
+			
+			if (_btnUninteract && interacting)
+			{
+				object.animation.play(_animationOFF);
+				interacting = false;
+				visible = true;
+			}
+			
+			if (interacting)
+			{
+				this.x = object.x + objectOffset;
 			}
 		}
 		

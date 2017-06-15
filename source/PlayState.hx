@@ -155,39 +155,11 @@ class PlayState extends FlxState
 			_player.x = 626;
 		}
 		
-		if (FlxG.overlap(_player, oven))
-		{
-			if (FlxG.keys.anyPressed([SPACE, UP, W]))
-			{
-				if (!cooking)
-				{
-					_player.visible = false;
-					oven.animation.play("cooking");
-					cooking = true;
-				}
-			}
-			if (cooking)
-			{
-				_player.x = 550;
-			}
-		}
-		if (FlxG.overlap(_player, sink))
-		{
-			if (FlxG.keys.anyPressed([SPACE, UP, W]))
-			{
-				if (!cleaningup)
-				{
-					_player.visible = false;
-					sink.animation.play("on");
-					cleaningup = true;
-					
-				}
-			}
-			if (cleaningup)
-			{
-				_player.x = 60;
-			}
-		}
+		_player.interact(oven, "cooking", "off");
+		
+		_player.interact(sink, "on", "off");
+		
+		
 		
 		if (FlxG.overlap(_player, lightswitch))
 		{

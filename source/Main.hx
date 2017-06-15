@@ -9,7 +9,7 @@ class Main extends MainTemplate
 	public function new()
 	{
 		FLS.extendedClass = Reg;
-		super(Classroom, 160, 100, 60); // 60fps?
+		super(PlayState, 160, 100, 60); // 60fps?
 		//super(St_Boot);
 	}//---------------------------------------------------;
 	// --
